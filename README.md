@@ -17,7 +17,7 @@
 
 ### db/ klasörü içerisinde projeye ait sql dosyası bulunmaktadır.
 
-### js ve css klasörü bootstrapın min kütüphanesini içermektedir.
+### js ve css klasörü bootstrap min kütüphanesini içermektedir.
 
 ### .htaccess dosyasında ise route ile ilgili işlem kodları mevcuttur.
 
