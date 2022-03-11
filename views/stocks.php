@@ -41,7 +41,7 @@ require_once('db/db_connection.php');
 		$array = array(
 			'code' => 1,
 			'msg' => $e->getMessage(),
-			'data' => $data
+			'data' => ""
 		);
 	}
 
