@@ -8,32 +8,26 @@ require_once('db/db_connection.php');
 		
 		if($getirdim)
 		{
-			$code = 0;
-			$msg = "success";
 			$array = array(
-				'code' => $code,
-				'msg' => $msg,
+				'code' => 0,
+				'msg' => 'success',
 				'data' => json_encode($results, JSON_PRETTY_PRINT)
 			);
 		}
 		else
 		{
-			$code = 1;
-			$msg = "error";
 			$array = array(
-				'code' => $code,
-				'msg' => $msg,
+				'code' => 1,
+				'msg' => 'error',
 				'data' => "NULL"
 			);
 		}
 	}
 	catch(Exception $e)
 	{
-		$code = 1;
-		$msg = "error";
 		$array = array(
-			'code' => $code,
-			'msg' => $msg,
+			'code' => 1,
+			'msg' => 'error',
 			'data' => $e->getMessage()
 		);
 	}

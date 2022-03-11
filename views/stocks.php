@@ -38,12 +38,10 @@ require_once('db/db_connection.php');
 	}
 	catch(Exception $e)
 	{
-		$code = 1;
-		$data = false;
 		$array = array(
-			'code' => $code,
+			'code' => 1,
 			'msg' => $e->getMessage(),
-			'data' => $result_array
+			'data' => $data
 		);
 	}
 
