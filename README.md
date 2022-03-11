@@ -1,6 +1,8 @@
 GİRİŞ
 ------------
 
+A simple application with a simple routing structure
+
 Projemde ana dizinde bulunan index.php'de basit bir routing(yönlendirme) mevcuttur.
 views klasöründe görüntü tarafı bulunuyor.
 views/index.php dosyası ilk giriş yaptığımızda karşımıza gelen dosyadır. Basit bir bootstrapla form mevcuttur.
