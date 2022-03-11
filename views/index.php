@@ -27,15 +27,12 @@ session_start();
 			</form>
 <!-- -->
 			<?php
-				// array boş değilse gelen mesajı al ekrana yazdır.
-				// $_SESSION['array_output'] içinde json olarak gelen array mevcuttur.
-				// bu array'ın içindekiler session yardımıyla alınıp gösterilip geri temizlenir -> session_destroy() ile.
 				if(!empty($_SESSION['array_output']))
 				{
 					$jsonArray = json_decode($_SESSION['array_output'],true);
 					echo '<div class="alert alert-primary" role="alert"> '. $_SESSION['array_output'] .' </div>';
 				}
-				session_destroy(); // sessionu sil
+				session_destroy();
 			?>
 <!-- -->
 		</div>

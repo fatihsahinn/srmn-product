@@ -1,7 +1,6 @@
 <?php
 session_start();
 require_once('db/db_connection.php');
-//stocks = my db table name
 
 	$prdct_name = htmlspecialchars(trim($_POST["product_name"]));
 	$prdct_stock = htmlspecialchars(trim($_POST["product_stock"]));
@@ -16,12 +15,12 @@ require_once('db/db_connection.php');
 		$result_data = $add_data->execute();
 		if($add_data)
 		{
-			$code = 0; // success
+			$code = 0;
 			$msg="success";
 		}
 		else
 		{
-			$code = 1; // fail
+			$code = 1;
 			$msg="error";
 		}
 		$result_array = array(
@@ -39,7 +38,6 @@ require_once('db/db_connection.php');
 	}
 	catch(Exception $e)
 	{
-		// error info
 		$code = 1;
 		$data = false;
 		$array = array(
@@ -49,7 +47,7 @@ require_once('db/db_connection.php');
 		);
 	}
 
-	$_SESSION['array_output'] = json_encode($array); // json olarak cevabı sessiona ekle.
-	header('Location: ' . $_SERVER['HTTP_REFERER']); // bir önceki dizine dön. // cevabı direkt buraya verdirmek yerine bir önceki sayfaya verdirdim.
+	$_SESSION['array_output'] = json_encode($array);
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 ?>
