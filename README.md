@@ -9,8 +9,7 @@
 
 ### views/index.php dosyası ilk giriş yaptığımızda karşımıza gelen dosyadır. Basit bir bootstrapla form mevcuttur.
 
-### Gönderilen formu views/stocks.php post eder ardından kontrol eder ve json olarak cevap verir. Gelen json cevap session yardımıyla anasayfaya 
-### görüntü olarak aktarılır.
+### Gönderilen formu views/stocks.php post eder ardından kontrol eder ve json olarak cevap verir. Gelen json cevap session yardımıyla anasayfaya görüntü olarak aktarılır.
 
 ### views/stockGET.php ise /stocks dizinine gidildiğinde olan kayıtları listeler.
 
